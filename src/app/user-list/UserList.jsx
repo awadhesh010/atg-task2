@@ -56,7 +56,7 @@ const UserList = () => {
                     {
                         data.map((user) => (
                             <div className={styles.user_profile} key={user.profile.email} onClick={() => handleClick(user)}  style={selectedId === user.profile.username ? { background: "rgb(67, 215, 229)" } : {}}>
-                                <Image src={user.avatar} className={styles.avtar_img} alt="No Image" width={80} height={80} />
+                                <Image src={user.avatar} className={styles.avtar_img} alt="Image Unavailable" width={80} height={80} />
 
                                 <div style={{ marginLeft: "12px" }}>
                                     <h5 style={{ fontWeight: 600 }}>{user.profile.username}</h5>
